@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#components-layout-demo-custom-trigger .trigger {
+  padding: 0 24px;
+  font-size: 18px;
+  line-height: 64px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+#components-layout-demo-custom-trigger .trigger:hover {
+  color: #1890ff;
+}
+
+#components-layout-demo-custom-trigger .logo {
+  height: 32px;
+  margin: 16px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.site-layout .site-layout-background {
+  background: #fff;
+}
+
+#rowmain{
+  display:flex;
+  align-items: center;
+  justify-content:center;
+  text-align: center;
+  height: 90vh;
+}
+ 
+#cardstyle{
+    background-color: #b2babb;
+ padding: 0;
+}
+hr{
+    margin-top: 0;
+    padding-top: 0;
+}
+#cardstyle h2{
+    font-family: 'Times New Roman', Times, serif;
+   font-weight: bolder;
+   color:white;
+   text-shadow: -4px 4px 8px red,-8px 8px 16px black ;
+    padding: 0;
+    background-color:rgba(0, 0, 255, 0.514);
+    margin: 0;
+}
+
+#cardstyle h4{
+    color:  #4a235a;
+}
+ 
+
+#cardstyle p{
+    color:  white;
+    background-color: green;
+     display: inline-block;
+     padding: 5px;
+     text-align: center;
+     margin-left: 80px;
+      
+     
+}
+#cardstyles{
+    border-width: 5px;
+    border-color: rgba(0, 0, 0, 0.5);
+}
+#cardstyles p{
+    color:  black;
+   font-weight: bolder;
+   font-size: 15px;
+     display: inline-block;
+     padding: 5px;
+     text-align: center;
+     margin-left: 0px;
+      
+     
+}
+
+.map-container {
+  height: 600px;
+  }
+   
+  .sidebar {
+  background-color: rgba(35, 55, 75, 0.9);
+  color: #fff;
+  padding: 6px 12px;
+  font-family: monospace;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 12px;
+  border-radius: 4px;
+  }
