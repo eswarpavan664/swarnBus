@@ -8,12 +8,18 @@ import firebaseDB from '../firebase';
 export default function  MapComponent() {
     
     const [getData,setGetData] = useState({});
+    const [getdetails,setdetails] = useState({});
   
     useEffect(()=>{
             firebaseDB.child('BusLocations').on('value',details=>{
                 console.log(details.val());
                 setGetData(details.val());
             })
+
+            firebaseDB.child('driversdetails').on('value',details=>{
+              console.log(details.val());
+               setdetails(details.val());
+          })
 
     },[getData])
 
@@ -43,6 +49,7 @@ export default function  MapComponent() {
           latitude={getData[key].Latitude}
           longitude={getData[key].Longitude}
        >
+       <h2>{getData[key].Busnumber}</h2>
          <img src=" https://img.icons8.com/color/48/000000/marker.png" />
         </Marker>
              )
